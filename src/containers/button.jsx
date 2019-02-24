@@ -7,8 +7,8 @@ const Button = ({getNews}) => (
   <button onClick={getNews}>Press to see news</button>
 );
 
-const mapDispatchToProps = () => ({
+const mapDispatchToProps = {
   getNews : getNews
-});
+};
 
 export default connect(null, mapDispatchToProps)(Button);
